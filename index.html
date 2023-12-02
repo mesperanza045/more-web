@@ -122,15 +122,54 @@
        </div>
       </article>
 
-      <article class="animation" id="animacion">
-        <div class="manual1">
-          <!-- <embed src="assets/doc/Manual_imagen_MORE22092023.pdf" type="application/pdf" width="100%" height="600px"/> -->
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Uj93hicGDNc?si=2ZsIZK06I36NPZzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <article id="animacion" class="animation">
+        <div class="tigger-video">
+            
+            <a class="video1" href="#openModal1"><img src="assets/img/video1.jpg" alt="video1"></a>
+            <a class="video2" href="#openModal2"><img src="assets/img/video2.jpg" alt="video1"></a>
+
+            <!-- https://openserps.com/gratis/descargar-miniaturas-youtube.html -->
         </div>
-        <div class="manual2">
-          <embed src="assets/doc/Manual_imagen_Mendoza.pdf" type="application/pdf" width="100%" height="600px"/>
+
+        <div id="openModal1" class="modalDialog">
+          <div>
+            <a
+              href="#close"
+              title="Close"
+              class="close"
+              onclick="controlVideo()"
+              >X</a
+            >
+            <iframe
+              src="https://www.youtube.com/embed/EE_ByoLn-uE?si=4x5IufmJn3eMSnG5"
+              title="YouTube video player"
+              frameborder="0"
+              allow="autoplay; encrypted-media; picture-in-picture"
+            >
+            </iframe>
+          </div>
+        </div>       
+
+        <div id="openModal2" class="modalDialog">
+          <div>
+            <a
+              href="#close"
+              title="Close"
+              class="close"
+              onclick="controlVideo()"
+              >X</a
+            >
+            <iframe
+              src="https://www.youtube.com/embed/RVrY9JAG8wk?si=8V9pOmyoTr2OVOCd"
+              title="YouTube video player"
+              frameborder="0"
+              allow="autoplay; encrypted-media; picture-in-picture"
+            >
+            </iframe>
+          </div>
         </div>
-       </article>
+
+      </article>
       
       <article class="ilustra" id="ilustra">
           <ul class="galeria">
@@ -240,6 +279,8 @@
         <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/>
       </svg>
     </a>
+
+    <script src="assets/js/index.js"></script>
 
 </body>
 </html>
